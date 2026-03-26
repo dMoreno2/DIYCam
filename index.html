@@ -160,8 +160,8 @@
     reader.onload = function(e) {
       try {
         var data = JSON.parse(e.target.result);
-        if (data.appName) document.getElementById('appName').value = data.appName;
-        if (data.appEventCode) document.getElementById('appEventCode').value = data.appEventCode;
+        if (data.display_name) document.getElementById('appName').value = data.display_name;
+        if (data.attendee_app_code) document.getElementById('appEventCode').value = data.attendee_app_code;
         if (data.googleServiceAccountItemId) document.getElementById('googleServiceAccountItemId').value = data.googleServiceAccountItemId;
         if (data.developmentTeam) document.getElementById('developmentTeam').value = data.developmentTeam;
         if (data.appleConnectApiItemId) document.getElementById('appleConnectApiItemId').value = data.appleConnectApiItemId;
